@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "author": "Juan Ruiz Gil",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": {
+        "env": ""
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -99.6,
+      "left": 186.2,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -15.25,
+      "left": 96,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -42,
+      "left": 272.6,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 6,
+      "left": 330.2,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 13.55,
+      "left": 201.6,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 119.15,
+      "left": 259.2,
+      "attrs": {
+        "value": "330"
+      }
+    },
+
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -99.1,
+      "left": 349.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+
+    {
+      "type": "wokwi-resistor",
+      "id": "ldr_resistor",
+      "top": 70,
+      "left": 430,
+      "attrs": {
+        "value": "10k"
+      }
+    }
+  ],
+
+  "connections": [
+    [
+      "r1:2",
+      "led1:C",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "led1:A",
+      "pico:GP13",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "r2:2",
+      "led2:C",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "r3:2",
+      "led3:C",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "r1:1",
+      "pico:GND.8",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "r2:1",
+      "pico:GND.8",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "r3:1",
+      "pico:GND.8",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "led2:A",
+      "pico:GP14",
+      "green",
+      [
+        "v86.4",
+        "h-144"
+      ]
+    ],
+    [
+      "led3:A",
+      "pico:GP15",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+
+    [
+      "ldr1:VCC",
+      "pico:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "ldr1:AO",
+      "pico:GP26",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "ldr1:GND",
+      "pico:GND.4",
+      "black",
+      [
+        "v0"
+      ]
+    ]
+  ],
+
+  "dependencies": {}
+}
