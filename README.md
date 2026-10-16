@@ -1,5 +1,8 @@
 # Monitor de nivel mediante ADC - Raspberry Pi Pico
 
+* Juan Pablo Ruiz Gil
+* Marco Uriel Castaneda Avila
+
 ## Descripción
 
 Este proyecto implementa un sistema de monitoreo de nivel utilizando el convertidor analógico-digital (ADC) de una Raspberry Pi Pico.
